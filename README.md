@@ -1,27 +1,47 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite boilerplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Get up and running very quickly
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install `asdf` if you don't have it already:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+brew install asdf
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Install the `nodejs` plugin:
+
+```
+asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+```
+
+In the root directory, install the specified Node version:
+
+```
+asdf install
+```
+
+To verify you have the correct version installed:
+
+```
+node -v
+```
+
+Install the dependencies:
+
+```
+npm install
+```
+
+Start the server:
+
+```
+npm run dev
+```
+
+Run tests:
+
+```
+npm run test
+```
